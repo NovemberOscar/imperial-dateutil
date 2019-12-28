@@ -13,7 +13,7 @@ Welcome to imperial-dateutil's documentation!
 .. note::
    The Emperor protects always and forever. He is the Omnissiah and will always live, always protect, always watch. He will protect all loyal to the Imperium and it is an honor to fight and die in the name of the emperor.
 
-A utility for use Imperial Dating System(include Era Indomitus Dating System)
+A utility to use Imperial Dating System(include Era Indomitus Dating System)
 
 .. code-block:: sh
 
