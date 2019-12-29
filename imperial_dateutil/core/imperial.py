@@ -218,6 +218,18 @@ class ImperialDatingSystem:
             year = year % 1000
 
             return type(self)(self.check_number, year_fraction, year, millennium)
+        if isinstance(other, datetime.timedelta):
+            year_fraction = other.days % 365
+            year = other.days // 365 % 1000
+            millennium = other.days // 365 // 1000
 
+            return type(self)(
+                self.check_number,
+                self.year_fraction+year_fraction,
+                self.year+year,
+                self.millennium+millennium
+            )
         else:
             return NotImplemented
+
+    __radd__ = __add__
