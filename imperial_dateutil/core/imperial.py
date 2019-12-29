@@ -219,7 +219,7 @@ class ImperialDatingSystem:
 
             return type(self)(self.check_number, year_fraction, year, millennium)
         if isinstance(other, datetime.timedelta):
-            year_fraction = other.days % 365
+            year_fraction = self._generate_year_fraction(other.days % 365, (other.seconds / 60 / 60))
             year = other.days // 365 % 1000
             millennium = other.days // 365 // 1000
 
