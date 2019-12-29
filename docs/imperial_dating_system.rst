@@ -14,10 +14,10 @@ After praying to Machine-God Omnisiah, then command this Lingua-technis to your 
     0123456.M41
     >>> print(ImperialDatingSystem(0, 123, 456, 41) + ImperialDatingSystem(0, 123, 456, 41))
     0246912.M82
-    >>> print(ImperialDatingSystem(0, 123, 456, 41) + timedelta(days=90000))
-    0333702.M41
-    >>> print(timedelta(days=90000) + ImperialDatingSystem(0, 123, 456, 41))
-    0333702.M41
+    >>> print(ImperialDatingSystem(0, 123, 456, 41) + timedelta(days=9000))
+    0780480.M41
+    >>> print(timedelta(hours=8.8) + ImperialDatingSystem(0, 123, 456, 41))
+    0124456.M41
     >>> print(ImperialDatingSystem.now())
     0995019.M3
     >>> ImperialDatingSystem(0 ,123, 456, 41) == ImperialDatingSystem(0, 123, 456, 41)
