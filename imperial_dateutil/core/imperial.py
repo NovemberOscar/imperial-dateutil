@@ -78,7 +78,7 @@ class ImperialDatingSystem:
     @classmethod
     def _generate_year_fraction(cls, converted_date, hour=0):
         determined_hour = (converted_date * 24) + hour
-        imperial_fraction = round(determined_hour * MAKR_CONSTANT)
+        imperial_fraction = int(determined_hour * MAKR_CONSTANT)
 
         return imperial_fraction
 
